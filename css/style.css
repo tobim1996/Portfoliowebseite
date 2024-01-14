@@ -571,11 +571,11 @@ body {
   z-index: 4;
 }
 
-[data-theme="dark"] .logo .light,
-[data-theme="light"] .logo .dark { display: none; }
+[data-theme="light"] .logo .dark,
+[data-theme="dark"] .logo .light { display: none; }
 
-[data-theme="dark"] .logo .dark,
-[data-theme="light"] .logo .light { display: block; }
+[data-theme="light"] .logo .light,
+[data-theme="dark"] .logo .dark { display: block; }
 
 .theme-btn {
   color: var(--on-surface-variant);
@@ -584,8 +584,8 @@ body {
   overflow: hidden;
 }
 
-[data-theme="dark"] .theme-btn .dark,
-[data-theme="light"] .theme-btn .light { display: none; }
+[data-theme="light"] .theme-btn .light,
+[data-theme="dark"] .theme-btn .dark { display: none; }
 
 
 
