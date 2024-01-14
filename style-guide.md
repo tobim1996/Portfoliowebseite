@@ -25,9 +25,21 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wg
 
 ### Colors
 
+Light colors
+
 ``` css
---white: hsl(0, 0%, 100%);
---black: hsl(0, 0%, 0);
+--background-light: hsl(293, 100%, 98%);
+--on-background-light: hsl(264, 8%, 12%);
+--surface-light: hsl(293, 100%, 98%);
+--on-surface-light: hsl(264, 8%, 12%);
+--on-surface-variant-light: hsl(264, 7%, 29%);
+--surface-container-low-light: hsl(278, 44%, 96%);
+--surface-container-light: hsl(276, 38%, 95%);
+--surface-bright-light: hsl(293, 100%, 98%);
+--primary-light: hsl(256, 34%, 48%);
+--on-primary-light: hsl(0, 0%, 100%);
+--outline-light: hsl(270, 4%, 47%);
+--outline-variant-light: hsl(270, 11%, 79%);
 ```
 
 Dark colors
@@ -45,23 +57,6 @@ Dark colors
 --on-primary-dark: hsl(259, 58%, 28%);
 --outline-dark: hsl(264, 5%, 58%);
 --outline-variant-dark: hsl(264, 7%, 29%);
-```
-
-Light colors
-
-``` css
---background-light: hsl(293, 100%, 98%);
---on-background-light: hsl(264, 8%, 12%);
---surface-light: hsl(293, 100%, 98%);
---on-surface-light: hsl(264, 8%, 12%);
---on-surface-variant-light: hsl(264, 7%, 29%);
---surface-container-low-light: hsl(278, 44%, 96%);
---surface-container-light: hsl(276, 38%, 95%);
---surface-bright-light: hsl(293, 100%, 98%);
---primary-light: hsl(256, 34%, 48%);
---on-primary-light: hsl(0, 0%, 100%);
---outline-light: hsl(270, 4%, 47%);
---outline-variant-light: hsl(270, 11%, 79%);
 ```
 
 ### Typography
@@ -104,12 +99,12 @@ Font weight
 ### Border Radius
 
 ``` css
---shape-corner-extra-small: 4px;
---shape-corner-small: 8px;
---shape-corner-medium: 12px;
---shape-corner-large: 16px;
---shape-corner-full: 500px;
---shape-corner-circle: 50%;
+--radius-extra-small: 4px;
+--radius-small: 8px;
+--radius-medium: 12px;
+--radius-large: 16px;
+--radius-full: 500px;
+--radius-circle: 50%;
 ```
 
 ### Box shadow

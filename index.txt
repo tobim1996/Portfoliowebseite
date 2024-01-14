@@ -1,3 +1,5 @@
+Devfolio - A software engineer portfolio
+
 This is a personal portfolio made by codewithsadee
 
 https://prod.liveshare.vsengsaas.visualstudio.com/join?0D57B5302506A6B1FDEE09DD05B6322C0EFE
@@ -6,7 +8,7 @@ https://prod.liveshare.vsengsaas.visualstudio.com/join?0D57B5302506A6B1FDEE09DD0
 
 #---------- HEADER ----------#
 
-alt = logo
+alt = Devfolio
 
 <span class="material-symbols-outlined dark" aria-hidden="true"> dark_mode </span>
 
