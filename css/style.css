@@ -3,12 +3,11 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2023 codewithsadee
+ * copyright 2023 Tobias Madaj
+    
+    USE CSS STYLE GUIDE FOR ALL PROJECTS !!!
+
  */
-
-
-
-
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -43,7 +42,7 @@
   --surface-container-low-dark: hsl(264, 8%, 12%);
   --surface-container-dark: hsl(257, 10%, 14%);
   --surface-bright-dark: hsl(270, 5%, 23%);
-  --primary-dark: hsl(258, 100%, 87%);
+  --primary-dark: hsl(240, 1%, 77%);
   --on-primary-dark: hsl(259, 58%, 28%);
   --outline-dark: hsl(264, 5%, 58%);
   --outline-variant-dark: hsl(264, 7%, 29%);
@@ -160,10 +159,6 @@
 
 }
 
-
-
-
-
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -218,10 +213,6 @@ body {
   color: var(--on-background);
   font-size: var(--body-large);
 }
-
-
-
-
 
 /*-----------------------------------*\
   #TYPOGRAPHY
@@ -335,10 +326,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -394,12 +381,8 @@ body {
 
 .section-title { margin-block-end: 16px; }
 
-
-
-
-
 /*-----------------------------------*\
-  #COMPONENT
+  #COMPONENTS
 \*-----------------------------------*/
 
 /**
@@ -427,7 +410,6 @@ body {
 }
 
 .btn:hover:not(:focus) { box-shadow: var(--elevation-1); }
-
 
 /**
  * TAB
@@ -484,13 +466,13 @@ body {
  */
 
 .chip {
-  height: 32px;
+  height: 40px;
   max-width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  padding-inline: 16px;
+  padding-inline: 8px;
   border: 1px solid var(--outline);
   border-radius: var(--radius-small);
   background-color: var(--surface);
@@ -525,7 +507,6 @@ body {
 
 .card-title { color: var(--on-surface); }
 
-
 /**
  * INPUT FIELD
  */
@@ -548,9 +529,6 @@ body {
 :where(.input-field, .textarea)::placeholder { color: var(--on-surface-variant); }
 
 :where(.input-field, .textarea):focus { box-shadow: inset 0 0 0 2px var(--primary); }
-
-
-
 
 
 /*-----------------------------------*\
