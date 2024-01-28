@@ -66,7 +66,7 @@
   --title-large: 2rem;
   --title-medium: 1.6rem;
   --title-small: 1.4rem;
-  --label-large: 1.6rem;
+  --label-large: 1.7rem;
   --label-medium: 1.2rem;
   --label-small: 1.1rem;
   --body-large: 1.6rem;
@@ -471,8 +471,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  padding-inline: 8px;
+  gap: 3px;
+  padding-inline: 6px;
   border: 1px none var(--outline);
   border-radius: var(--radius-small);
   background-color: var(--surface);
