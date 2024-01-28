@@ -20,15 +20,15 @@
    */
 
   /* light theme */
-  --background-light: hsl(293, 100%, 98%);
+  --background-light: hsl(0, 0%, 100%);
   --on-background-light: hsl(264, 8%, 12%);
-  --surface-light: hsl(293, 100%, 98%);
+  --surface-light: hsl(0, 0%, 100%);
   --on-surface-light: hsl(264, 8%, 12%);
   --on-surface-variant-light: hsl(264, 7%, 29%);
-  --surface-container-low-light: hsl(278, 44%, 96%);
+  --surface-container-low-light: hsl(0, 27%, 96%);
   --surface-container-light: hsl(276, 38%, 95%);
   --surface-bright-light: hsl(293, 100%, 98%);
-  --primary-light: hsl(256, 34%, 48%);
+  --primary-light: hsl(256, 5%, 56%);
   --on-primary-light: hsl(0, 0%, 100%);
   --outline-light: hsl(270, 4%, 47%);
   --outline-variant-light: hsl(270, 11%, 79%);
@@ -66,7 +66,7 @@
   --title-large: 2rem;
   --title-medium: 1.6rem;
   --title-small: 1.4rem;
-  --label-large: 1.4rem;
+  --label-large: 1.6rem;
   --label-medium: 1.2rem;
   --label-small: 1.1rem;
   --body-large: 1.6rem;
@@ -473,7 +473,7 @@ body {
   align-items: center;
   gap: 8px;
   padding-inline: 8px;
-  border: 1px solid var(--outline);
+  border: 1px none var(--outline);
   border-radius: var(--radius-small);
   background-color: var(--surface);
   color: var(--on-surface-variant);
