@@ -586,7 +586,7 @@ body {
   border-radius: var(--radius-circle);
 }
 
-.hero-content { max-width: 500px; }
+.hero-content { max-width: 600px; }
 
 .hero .section-subtitle { color: var(--on-surface-variant); }
 
@@ -637,10 +637,6 @@ body {
   gap: 4px;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #PROJECT
 \*-----------------------------------*/
@@ -650,9 +646,6 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 12px;
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -840,6 +833,7 @@ body {
     max-width: 1128px;
     margin-inline: auto;
   }
+  
 
 
   /**
