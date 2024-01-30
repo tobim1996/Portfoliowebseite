@@ -490,9 +490,9 @@ body {
 .card {
   background-color: var(--surface-container-low);
   border-radius: var(--radius-medium);
-  padding: 16px;
+  padding: 14px;
   display: grid;
-  gap: 16px;
+  gap: 8px;
   --state-layer-bg: var(--on-surface);
 }
 
@@ -500,7 +500,7 @@ body {
 
 .card-content {
   display: grid;
-  gap: 4px;
+  gap: 8px;
 }
 
 .card-subtitle { color: var(--on-surface-variant); }
