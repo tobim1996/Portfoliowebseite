@@ -1,5 +1,8 @@
 /*-----------------------------------*\
-  #style.css
+  #style.css^
+
+  Made by Tobias Madaj
+  
 \*-----------------------------------*/
 
 /**
@@ -549,6 +552,22 @@ body {
   z-index: 4;
 }
 
+.right-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Abstand zwischen den Buttons */
+}
+
+/* Language Switcher Button  */
+.language-btn {
+  color: var(--on-surface-variant);
+  --state-layer-bg: var(--on-surface-variant);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+} 
+
+
+
 [data-theme="dark"] .logo .light,
 [data-theme="light"] .logo .dark { display: none; }
 
@@ -560,7 +579,21 @@ body {
   --state-layer-bg: var(--on-surface-variant);
   border-radius: var(--radius-full);
   overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
 }
+
+/* Hover-Effekt mit Box-Shadow */
+.theme-btn:hover,
+.language-btn:hover {
+  box-shadow: var(--elevation-1);}
+
+  /* Hover-Effekt für den Inhalt */
+.theme-btn:hover .state-layer,
+.language-btn:hover .state-layer {
+  opacity: 0.08;
+}
+
+
 
 [data-theme="dark"] .theme-btn .dark,
 [data-theme="light"] .theme-btn .light { display: none; }
@@ -834,8 +867,6 @@ body {
     margin-inline: auto;
   }
   
-
-
   /**
    * ABOUT CARD
    */

@@ -28,6 +28,30 @@ const changeTheme = () => {
 
 $themeBtn.addEventListener("click", changeTheme);
 
+/**
+ * Language Switcher
+ */
+
+const /** {NodeElement} */ $languageBtn = document.querySelector("[data-language-btn]");
+
+if (sessionStorage.getItem("language")) {
+  document.documentElement.lang = sessionStorage.getItem("language");
+} else {
+  document.documentElement.lang = "de"; // Standardmäßig auf Deutsch setzen
+}
+
+const changeLanguage = () => {
+  const currentLang = document.documentElement.lang;
+  const newLang = currentLang === "de" ? "en" : "de";
+  
+  document.documentElement.lang = newLang;
+  sessionStorage.setItem("language", newLang);
+}
+
+$languageBtn.addEventListener("click", changeLanguage);
+
+
+
 
 /**
  * TAB
