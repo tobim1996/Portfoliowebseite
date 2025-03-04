@@ -566,8 +566,6 @@ body {
   overflow: hidden;
 } 
 
-
-
 [data-theme="dark"] .logo .light,
 [data-theme="light"] .logo .dark { display: none; }
 
@@ -585,12 +583,26 @@ body {
 /* Hover-Effekt mit Box-Shadow */
 .theme-btn:hover,
 .language-btn:hover {
-  box-shadow: var(--elevation-1);}
+  box-shadow: var(--elevation-1);
+}
 
-  /* Hover-Effekt für den Inhalt */
 .theme-btn:hover .state-layer,
 .language-btn:hover .state-layer {
-  opacity: 0.08;
+  opacity: 0.09;
+}
+
+[data-theme="dark"] .theme-btn:hover,
+[data-theme="dark"] .language-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Helles Grau */
+  opacity: 0.8;
+  box-shadow: var(--elevation-1);
+
+}
+
+[data-theme="dark"] .theme-btn:hover .state-layer,
+[data-theme="dark"] .language-btn:hover .state-layer {
+  background-color: rgba(255, 255, 255, 0.2); /* Helles Grau */
+  opacity: 1;
 }
 
 
