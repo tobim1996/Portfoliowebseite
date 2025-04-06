@@ -64,15 +64,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const lang = document.documentElement.lang;
     console.log("Aktualisiere Text für Sprache:", lang);
 
-    // Alle Elemente mit dem data-lang-* Attribut aktualisieren
-    const elements = document.querySelectorAll("[data-lang-de], [data-lang-en]");
-    elements.forEach((element) => {
-      const text = element.getAttribute(`data-lang-${lang}`);
+    // Alle Elemente mit data-lang-* Attributen aktualisieren
+  const elements = document.querySelectorAll("[data-lang-de], [data-lang-en]");
+  elements.forEach((element) => {
+    const text = element.getAttribute(`data-lang-${lang}`);
+    if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
+      // Aktualisiere das placeholder-Attribut für Eingabefelder
+      if (text) {
+        element.setAttribute("placeholder", text);
+      }
+    } else {
+      // Aktualisiere den innerHTML für andere Elemente
       if (text) {
         element.innerHTML = text;
       }
-    });
-  };
+    }
+  });
+};
 
   // Event-Listener für den Button-Klick hinzufügen
   $languageBtn.addEventListener("click", () => {
