@@ -89,22 +89,29 @@ document.addEventListener("DOMContentLoaded", () => {
  * TAB
  */
 
+
 const /** {NodeList} */ $tabBtn = document.querySelectorAll("[data-tab-btn]");
-let /** {NodeElement} */[lastActiveTab] = document.querySelectorAll("[data-tab-content]");
-let /** {NodeElement} */[lastActiveTabBtn] = $tabBtn;
+const /** {NodeList} */ $tabContent = document.querySelectorAll("[data-tab-content]");
+
+// Initialisiere die aktiven Tab-Elemente
+let /** {NodeElement} */ lastActiveTab = document.querySelector("[data-tab-content].active");
+let /** {NodeElement} */ lastActiveTabBtn = document.querySelector("[data-tab-btn].active");
 
 $tabBtn.forEach(item => {
   item.addEventListener("click", function () {
+    // Entferne die aktive Klasse von den vorherigen Tabs und Inhalten
+    if (lastActiveTab) lastActiveTab.classList.remove("active");
+    if (lastActiveTabBtn) lastActiveTabBtn.classList.remove("active");
 
-    lastActiveTab.classList.remove("active");
-    lastActiveTabBtn.classList.remove("active");
-
-    const /** {NodeElement} */ $tabContent = document.querySelector(`[data-tab-content="${item.dataset.tabBtn}"]`);
-    $tabContent.classList.add("active");
+    // Finde den zugehörigen Tab-Inhalt
+    const /** {NodeElement} */ newTabContent = document.querySelector(`[data-tab-content="${item.dataset.tabBtn}"]`);
+    if (newTabContent) {
+      newTabContent.classList.add("active");
+    }
     this.classList.add("active");
 
-    lastActiveTab = $tabContent;
+    // Aktualisiere die Referenzen für die aktiven Elemente
+    lastActiveTab = newTabContent;
     lastActiveTabBtn = this;
-
   });
 });
