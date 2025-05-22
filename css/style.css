@@ -716,15 +716,15 @@ body {
 .resume-bottom-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 12px;
+  gap: 6px;
 }
 
 .resume-bottom-item {
   background-color: var(--surface-container);
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 12px;
+  gap: 14px;
+  padding: 9px;
   border-radius: var(--radius-small);
 }
 
