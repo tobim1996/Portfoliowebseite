@@ -27,11 +27,11 @@
   --on-background-light: hsl(264, 8%, 12%);
   --surface-light: hsl(0, 0%, 100%);
   --on-surface-light: hsl(264, 8%, 12%);
-  --on-surface-variant-light: hsl(264, 7%, 29%);
+  --on-surface-variant-light: hsl(0, 100%, 2%);
   --surface-container-low-light: hsl(0, 27%, 96%);
   --surface-container-light: hsl(276, 38%, 95%);
   --surface-bright-light: hsl(293, 100%, 98%);
-  --primary-light: hsl(256, 5%, 56%);
+  --primary-light: hsl(0, 1%, 18%);
   --on-primary-light: hsl(0, 0%, 100%);
   --outline-light: hsl(270, 4%, 47%);
   --outline-variant-light: hsl(270, 11%, 79%);
@@ -40,8 +40,8 @@
   --background-dark: hsl(260, 14%, 8%);
   --on-background-dark: hsl(280, 17%, 90%);
   --surface-dark: hsl(260, 14%, 8%);
-  --on-surface-dark: hsl(280, 17%, 90%);
-  --on-surface-variant-dark: hsl(270, 11%, 79%);
+  --on-surface-dark: hsl(276, 26%, 96%);
+  --on-surface-variant-dark: hsl(285, 11%, 93%);
   --surface-container-low-dark: hsl(264, 8%, 12%);
   --surface-container-dark: hsl(257, 10%, 14%);
   --surface-bright-dark: hsl(270, 5%, 23%);
