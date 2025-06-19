@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>404 - Seite nicht gefunden | Portfoliowebseite</title>
+  <meta name="title" content="404 - Seite nicht gefunden" />
+  <meta name="description" content="404 Fehlerseite der Portfoliowebseite von Tobias Madaj" />
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* volle Bildschirmhöhe */
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+main h1 {
+  font-size: 6rem;
+  margin: 0;
+  color: var(--color-error, #e74c3c);
+  font-weight: 700;
+}
+
+main h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  color: var(--color-accent, #f39c12); /* Optional: Orange Akzent */
+}
+
+main p {
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+  color: var(--color-text-primary, #eee);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+main a.button {
+  background-color: var(--color-primary, #3498db);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+main a.button:hover {
+  background-color: var(--color-primary-dark, #2980b9);
+  transform: scale(1.05);
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+  font-size: 1.4em;
+}
+
+.footer {
+
+}
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <a href="/" class="logo">
+      <img src="./assets/images/Logo_dark.png" alt="Devfolio" width="145" height="32" class="dark" />
+      <img src="./assets/images/Logo_light.png" alt="Devfolio" width="145" height="32" class="light" />
+    </a>
+
+    <div class="right-buttons">
+      <button class="icon-btn theme-btn" data-theme-btn>
+        <span class="material-symbols-outlined dark">dark_mode</span>
+        <span class="material-symbols-outlined light">light_mode</span>
+      </button>
+
+      <button class="icon-btn language-btn" data-language-btn>
+        <span class="material-symbols-outlined">language</span>
+      </button>
+    </div>
+  </header>
+
+   <main>
+    <br>
+    <br>
+    <img width="550px" height="900px" src="./assets/images/404-image.png" alt="Seite nicht gefunden" />
+    <br>
+    <br>
+    <br>
+    <h1>404 - Seite nicht gefunden</h1>
+    <h3>Oops! Die von dir gesuchte Seite existiert leider nicht oder wurde verschoben.</h3>
+    <br>
+    <a href="index.html" class="button">Zurück zur Startseite</a>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <p class="body-medium">© 2025 Tobias Madaj. Alle Rechte vorbehalten. Diese Website wird auf GitHub Pages gehostet.</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

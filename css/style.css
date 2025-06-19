@@ -431,12 +431,16 @@ body {
 .tab-btn {
   height: 48px;
   width: 100%;
-  display: grid;
-  place-content: center;
+  /* display: grid; place-content: center; ❌ */
+  display: flex; /* ✔ */
+  align-items: center; /* ✔ vertikal zentrieren */
+  justify-content: center; /* ✔ optional zentriert alles */
+  gap: 8px; /* ✔ Abstand zwischen Icon und Text */
   background-color: var(--surface);
   color: var(--on-surface-variant);
   --state-layer-bg: var(--on-surface-variant);
 }
+
 
 .tab-btn.active {
   color: var(--primary);

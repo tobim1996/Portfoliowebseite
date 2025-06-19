@@ -23,10 +23,47 @@ const changeTheme = () => {
 
   $HTML.dataset.theme = sessionStorage.getItem("theme") === "dark" ? "light" : "dark";
   sessionStorage.setItem("theme", $HTML.dataset.theme);
+  updateThemeIcons(); // <--- Icon beim Theme-Wechsel aktualisieren
+
 
 }
 
+
 $themeBtn.addEventListener("click", changeTheme);
+
+const updateThemeIcons = () => {
+  const currentTheme = $HTML.dataset.theme;
+
+  const icons = document.querySelectorAll("[data-icon]");
+
+  icons.forEach(icon => {
+    const type = icon.dataset.icon;
+
+    const iconMap = {
+      resume: {
+        light: "assets/images/resumetabicondark.png",
+        dark:  "assets/images/resumetabiconlight.png"
+      },
+      project: {
+        light: "assets/images/projecttabicondark.png",
+        dark:  "assets/images/projecttabiconlight.png"
+      },
+      contact: {
+        light: "assets/images/contactstabicondark.png",
+        dark:  "assets/images/contactstabiconlight.png"
+      }
+    };
+
+    if (iconMap[type]) {
+      icon.src = iconMap[type][currentTheme];
+    }
+  });
+};
+
+
+// Beim Initialisieren: Icon setzen
+updateThemeIcons();
+
 
 /**
  * Language Switcher
