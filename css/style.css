@@ -609,14 +609,8 @@ body {
   opacity: 1;
 }
 
-
-
 [data-theme="dark"] .theme-btn .dark,
 [data-theme="light"] .theme-btn .light { display: none; }
-
-
-
-
 
 /*-----------------------------------*\
   #HERO
@@ -649,10 +643,6 @@ body {
   flex-wrap: wrap;
   gap: 8px;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #ABOUT CARD
@@ -696,7 +686,6 @@ body {
   gap: 12px;
 }
 
-
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
@@ -733,10 +722,6 @@ body {
 }
 
 .resume-bottom-item .icon { height: 28px; }
-
-
-
-
 
 /*-----------------------------------*\
   #CONTACT
@@ -806,10 +791,6 @@ body {
   border-radius: var(--radius-medium);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
@@ -819,10 +800,6 @@ body {
   padding: 16px;
   border-block-start: 1px solid var(--outline-variant);
 }
-
-
-
-
 
 /*-----------------------------------*\
   #MEDIA QUERIES

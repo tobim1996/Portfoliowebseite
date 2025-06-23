@@ -221,8 +221,24 @@
 
           <div class="primary-tabs">
 
-             <button class="tab-btn active" data-tab-btn="resume">
-            <img id="resume-icon" data-icon="resume" width="30px" height="30px" src="assets/images/resumetabiconlight.png" alt="Resume Icon"> 
+
+             <button class="tab-btn active" data-tab-btn="contact">
+             <!-- <span class="tab-text title-medium">Skills</span> -->
+            <img id="contact-icon"   width="24px" height="24px" src="assets/images/contactstabiconlight.png" alt="Resume Icon"> 
+
+             <span class="tab-text title-medium" 
+             data-lang-de="Kenntnisse" 
+             data-lang-en="Skills">
+             Kenntnisse
+            </span>
+
+              <div class="state-layer"></div>
+            </button>
+
+
+
+             <button class="tab-btn" data-tab-btn="resume">
+            <img id="resume-icon"  width="30px" height="30px" src="assets/images/resumetabiconlight.png" alt="Resume Icon"> 
              <span class="tab-text title-medium" 
                 data-lang-de="Lebenslauf" 
                data-lang-en="Resume">
@@ -231,12 +247,9 @@
            <div class="state-layer"></div>
             </button>
 
-           
-
-
             <button class="tab-btn" data-tab-btn="project">
                <!-- <span class="tab-text title-medium">Projekte</span>-->
-            <img id="project-icon" data-icon="project"  width="23px" height="23px" src="assets/images/projecttabiconlight.png" alt="Resume Icon"> 
+            <img id="project-icon"   width="29px" height="29px" src="assets/images/projecttabiconlight.png" alt="Resume Icon"> 
 
                <span class="tab-text title-medium" 
                data-lang-de="Projekte" 
@@ -247,18 +260,7 @@
             </button>
 
           
-            <button class="tab-btn" data-tab-btn="contact">
-             <!-- <span class="tab-text title-medium">Kontakte</span> -->
-            <img id="contact-icon" data-icon="contact"  width="24px" height="24px" src="assets/images/contactstabiconlight.png" alt="Resume Icon"> 
-
-             <span class="tab-text title-medium" 
-             data-lang-de="Kontakte" 
-             data-lang-en="Contacts">
-             Kontakte
-            </span>
-
-              <div class="state-layer"></div>
-            </button>
+           
 
           </div>
 
@@ -366,7 +368,7 @@
             - #RESUME
           -->
 
-          <section class="section tab-content resume-tab active" data-tab-content="resume">
+          <section class="section tab-content resume-tab" data-tab-content="resume">
             <div class="container">
 
              <!-- <h2 class="section-title title-large">Beruflicher Werdegang</h2> -->
@@ -375,7 +377,7 @@
              data-lang-de="Beruflicher Werdegang" 
              data-lang-en="Professional Experience">
              Beruflicher Werdegang
-          </h2>
+            </h2>
          
               <ul class="list">
 
@@ -732,15 +734,97 @@
                 </div>
               </li>
 
+
+               
+              
+
             </ul>
+            
 
-          <!-- <h3 class="section-title title-large">Skills and Technologies</h3> --> 
+            <h2 class="section-title title-large" 
+             data-lang-de="Sprachkenntnisse" 
+             data-lang-en="Language skills">
+             Sprachkenntnisse
+            </h2>
+         
 
-             <h3 class="section-title title-large" 
-              data-lang-de="Kompetenzen und Technologien" 
-             data-lang-en="Skills and Technologies">
-             Kompetenzen und Technologien
-             </h3>
+              <ul class="list">
+
+                <li class="resume-item">
+                  <div class="resume-card">
+
+                    <p class="body-large"
+                    data-lang-de="Fachhochschulreife – BBSOvG Magdeburg"
+                    data-lang-en="Advanced technical diploma – BBSOvG Magdeburg">
+                    Deutsch
+                 </p>
+                 
+
+                    <span class="label-medium card-subtitle">Muttersprache</span>
+
+                  </div>
+                </li>
+
+                <li class="resume-item">
+                  <div class="resume-card">
+                    <p class="body-large"
+                    data-lang-de="Englisch"
+                    data-lang-en="English">
+                    Englisch
+                 </p>
+                 
+
+                    <span class="label-medium card-subtitle">Verhandlungssicher</span>
+
+                  </div>
+                </li>
+
+                <li class="resume-item">
+                  <div class="resume-card">
+
+                    <p class="body-large"
+                    data-lang-de='Russisch'
+                    data-lang-en='Russian'>
+                    Russisch
+                    </p>
+                 
+
+                    <span class="label-medium card-subtitle">Schulkenntnisse</span>
+
+                  </div>
+                </li>
+
+
+              </ul>
+
+
+
+            </div>
+
+             
+
+
+          </section>
+
+          <!-- 
+            - #CONTACT
+          -->
+
+<section class="section tab-content resume-tab active" data-tab-content="contact">
+  <div class="container">
+
+     <h3 class="section-title title-large" 
+      data-lang-de="Meine Kenntnisse" 
+      data-lang-en="My Knowledge">
+      Meine Kenntnisse
+    </h3>
+
+    <h3 class="section-title title-large" 
+      data-lang-de="Kompetenzen und Technologien" 
+      data-lang-en="Skills and Technologies">
+      Kompetenzen und Technologien
+    </h3>
+                   
 
               <ul class="resume-bottom-list">
 
@@ -855,159 +939,10 @@
                   <span class="label-medium">Confluence</span>
                 </li>
 
-
-
               </ul>
 
-            </div>
-          </section>
-
-          <!-- 
-            - #CONTACT
-          -->
-
-          <section class="section tab-content contact-tab" data-tab-content="contact">
-            <div class="container">
-
-              <div class="contact-info">
-
-               <!-- <h5 class="section-title title-medium">Kontaktiere mich</h5> -->
-
-                     <h5 class="section-title title-medium" 
-                     data-lang-de="Kontaktiere mich" 
-                     data-lang-en="Contact Me">
-                     Kontaktiere mich
-                    </h5>
-           
-
-                <ul class="contact-info-list">
-
-                  <li class="contact-info-item">
-
-                    <div class="icon-box">
-                      <span class="material-symbols-outlined" aria-hidden="true"> mail </span>
-                    </div>
-
-                    <div class="info-content">
-
-                      <p class="label-small info-title"
-                      data-lang-de="E-Mail Adresse"
-                      data-lang-en="EMail Address"
-                      >E-Mail Adresse</p>
-
-                      <a href="mailto:tobim1996@outlook.de" class="label-small info-text">tobim1996@outlook.de</a>
-
-                    </div>
-
-                  </li>
-
-                  <li class="contact-info-item">
-
-                    <div class="icon-box">
-                      <span class="material-symbols-outlined" aria-hidden="true"> call </span>
-                    </div>
-
-                    <div class="info-content">
-
-                      <p class="label-small info-title"
-                      data-lang-de="Telefonnummer"
-                      data-lang-en="Telephone number"
-                      >Telefonnummer</p>
-
-                      <a href="tel:+2382395632498" class="label-small info-text">+4917643833331</a>
-
-                    </div>
-
-                  </li>
-
-                  <li class="contact-info-item">
-
-                    <div class="icon-box">
-                      <span class="material-symbols-outlined" aria-hidden="true"> location_on </span>
-                    </div>
-
-                    <div class="info-content">
-
-                      <p class="label-small info-title"
-                      data-lang-de="Wohnort"
-                      data-lang-en="Place of residence"
-                      >Wohnort</p>
-
-                      <a href="#" class="label-small info-text">Bundesland Brandenburg, Germany</a>
-
-                    </div>
-
-                  </li>
-
-                </ul>
-                    <!-- 
-                <h4 class="title-small">Social Media - Konten</h4>
-
-                <div class="social-list">
-
-                
-
-                  <a href="#" class="social-item">
-                    <svg width="41" height="41"    fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.675C0 23.407 0.593 24 1.325 24H12.82V14.708H9.692V11.077H12.82V8.413C12.82 5.337 14.692 3.724 17.433 3.724C18.744 3.724 19.907 3.82 20.207 3.861V7.007H18.196C16.684 7.007 16.415 7.752 16.415 8.835V11.077H20.085L19.59 14.708H16.415V24H22.675C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z" style="fill: var(--on-surface-variant)"/>
-                    </svg>
-                  </a>
-                  
-                  <a href="#" class="social-item">
-                    <svg width="43" height="43" viewBox="0 0 41 41" xmlns="http://www.w3.org/2000/svg"   ><path d="M 6 4 C 4.895 4 4 4.895 4 6 L 4 24 C 4 25.105 4.895 26 6 26 L 24 26 C 25.105 26 26 25.105 26 24 L 26 6 C 26 4.895 25.105 4 24 4 L 6 4 z M 8.6484375 9 L 13.259766 9 L 15.951172 12.847656 L 19.28125 9 L 20.732422 9 L 16.603516 13.78125 L 21.654297 21 L 17.042969 21 L 14.056641 16.730469 L 10.369141 21 L 8.8945312 21 L 13.400391 15.794922 L 8.6484375 9 z M 10.878906 10.183594 L 17.632812 19.810547 L 19.421875 19.810547 L 12.666016 10.183594 L 10.878906 10.183594 z" style="fill: var(--on-surface-variant) "/>
-                    </svg>
-                  </a>
-                  
-                </div> -->
-         </div>
-
-              <div class="contact-form">
-
-               <!--  <h3 class="title-large">Let’s Work Together.</h3> -->
-
-               <h3 class="title-large" 
-               data-lang-de="Lass uns zusammenarbeiten." 
-               data-lang-en="Let’s Work Together.">
-               Let’s Work Together.
-           </h3>
-                
-                <form action="" method="post" class="input-wrapper">
-
-                  <input type="text" name="name" placeholder="Name*" required class="input-field">
-
-                  <input type="email" name="email" placeholder="E-Mail*" required class="input-field">
-
-                  <input type="text"
-                  name="subject"
-                  placeholder="Betreff"
-                  data-lang-de="Betreff"
-                  data-lang-en="Subject"
-                  required class="input-field"
-                  >
-           
-                  <textarea name="message"
-                  class="textarea"
-                  placeholder="Nachricht"
-                  data-lang-de="Nachricht"
-                  data-lang-en="Message"></textarea>
-        
-        
-                  <button class="btn" type="submit">
-                    <span class="label-large"
-                    data-lang-de="Sende Nachricht"
-                    data-lang-en="Send Message"
-                    Sende Nachricht>
-                  </span>
-
-                    <div class="state-layer"></div>
-                  </button>
-
-                </form>
-
-              </div>
-
-            </div>
-          </section>
+  </div>
+</section>
 
         </div>
 
