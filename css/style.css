@@ -695,20 +695,25 @@ body {
   #HERO
 \*-----------------------------------*/
 
-.hero { padding-block-start: calc(var(--top-bar-height) + 24px); }
+.hero { padding-block-start: calc(var(--top-bar-height) + 20px); }
+
+
+.section.hero {
+  margin-bottom: -1rem; /* Wert nach Geschmack anpassen */
+}
 
 .hero .container {
   display: grid;
   align-items: center;
-  gap: 24px;
+  gap: 30px;
 }
 
 .hero-banner {
-  width: 240px;
+  width: 245px;
   border-radius: var(--radius-circle);
 }
 
-.hero-content { max-width: 600px; }
+.hero-content { max-width: 650px; }
 
 .hero .section-subtitle { color: var(--on-surface-variant); }
 
@@ -720,7 +725,7 @@ body {
 .hero .btn-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 9px;
+  gap: 10px;
 }
 
 /*-----------------------------------*\
