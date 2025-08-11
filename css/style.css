@@ -502,19 +502,37 @@ body {
  * Change of Chip Font Size
  */
 .chip .chip-font {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
+  font-weight: 590;
+  letter-spacing: 0.02em;
 }
+
 
  .chip:hover,
 .chip:focus-visible,
 .chip--active,
 .chip--active:hover,
 .chip--active:focus-visible {
-  background: rgba(255,255,255,0.08); /* leichtes Overlay */
+  background: rgba(170, 161, 161, 0.08); /* leichtes Overlay */
   color: var(--on-surface-variant);
   border: 1px solid transparent; /* kein sichtbarer Rand */
   box-shadow: none;
 }
+
+.chip.active {
+  background: rgba(255,255,255,0.08); /* wie aktueller Hover */
+  color: var(--on-surface-variant);
+  border: 1px solid transparent;
+  box-shadow: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.chip.active:hover,
+.chip.active:focus-visible {
+  background: rgba(255,255,255,0.18); /* etwas stärker beim Hover */
+  color: var(--on-surface);
+}
+
 
 
 .chip .material-symbols-outlined { font-size: 1.8rem; }

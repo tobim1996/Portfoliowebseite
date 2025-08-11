@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+
+<head>
+  <meta charset=" UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - meta tags
+  -->
+  <title>Portfoliowebseite</title>
+  <meta name="title" content="Portfoliowebseite">
+  <meta name="description" content="Portfoliowebseite von Tobias Madaj">
+
+  <!-- 
+    - favicon ----------------------
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - material icon link-
+  -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <header class="topbar">
+
+    <a href="#" class="logo">
+      <img src="./assets/images/Logo_dark.png" alt="Devfolio" width="145" height="32" class="dark">
+      <img src="./assets/images/Logo_light.png" alt="Devfolio" width="145" height="32" class="light">
+    </a>
+
+
+    <div class="right-buttons">
+      
+      <!-- Dark Mode Switcher -->
+      <button class="icon-btn theme-btn" data-theme-btn>
+        <img src="assets/images/darkmodeicon.png" alt="Dark Mode" width="24" height="24" class="theme-icon-dark">
+        <img src="assets/images/lightmodeicon.png" alt="Light Mode" width="24" height="24" class="theme-icon-light">
+
+      </button>
+      
+      
+      <!-- Language Switcher -->
+      <button class="icon-btn language-btn" data-language-btn>
+  <img src="assets/images/languageswitcher.png" alt="Language Switcher" width="24" height="24">
+      </button>
+  
+    </div>
+  
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+ 
+      <section class="section hero">
+        <div class="container">
+
+          <figure class="hero-banner img-holder" style="--width: 240; --height: 240;">
+            <img src="./assets/images/project-1.png" width="240" height="240"  class="img-cover">
+          </figure>
+
+              <div class="hero-content">
+              <span class="label-large section-subtitle"></span>
+              <h1 class="display-small">Projekt Cardetectionml</h1>
+              
+              <p class="body-large section-text" id="hero-text"
+                 data-lang-de='Lebensmotto: "Erfolg hat drei Buchstaben T-U-N". <br>Offen für neue Jobmöglichkeiten im IT-Bereich. <br>' 
+                 data-lang-en='Motto: "Success has three letters D-O-I-T". <br> Open to new job opportunities in the IT field. <br>'>
+                 Lebensmotto: "Erfolg hat drei Buchstaben T-U-N".     <br>                               
+                 Offen für neue Jobmöglichkeiten im IT-Bereich.
+              </p>
+          
+            <div class="btn-wrapper">
+
+              <a href="mailto:tobim1996@outlook.de" class="chip">
+                <span aria-hidden="true"> <img width="21px" height="21px" src="assets/images/outlook.png"></span>   <!-- "class="material-symbols-outlined"  wurde ausgeklammert für später vielleicht noch wichtig-->
+
+                <span class="label-large">tobim1996@outlook.de</span>
+
+                <div class="state-layer"></div>
+              </a>
+
+              <a href="tel:+4917643833331" class="chip">
+                <span  aria-hidden="true"> <img width="23px" height="23px" src="assets/images/WhatsApp.png"> </span> 
+
+                <span class="label-large ">+4917643833331</span> <!-- "class="material-symbols-outlined"  wurde ausgeklammert für später vielleicht noch wichtig-->
+
+                <div class="state-layer"></div>
+              </a>
+
+            </div>
+
+
+
+</div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #MAIN CONTENT
+      -->
+
+      <div class="article">
+
+        <div class="about-card">
+
+         <!--  <h2 class="card-title title-medium">Über mich</h2> -->
+
+
+          <h2 class="card-title title-large" id="about-me" 
+          data-lang-de="Mein Profil" 
+          data-lang-en="My Profile">
+Mein Profil
+         </h2>
+     
+
+         <!--     Zum AUSKLAMMERN      
+
+      <h2 class="card-title title-large icon-title" 
+    id="about-me" 
+    data-lang-de="Profil" 
+    data-lang-en="Profile">
+  <img src="assets/images/profileiconforcardtitle.png" alt="Profil Icon" width="25" height="25" class="icon-title-img">
+          Mein Profil
+          </h2> 
+          -->
+
+<!--
+
+         <!-- <p class="body-medium card-text">-------------------------// Zen of IT //------------------------- <br>
+            
+            Mag Python und Javascript , 28 Jahre jung <br>
+
+            Fokus auf Netzwerkadministration, Dev Ops & Cloud Computing, Cyber Security and more ...
+
+          </p> -->
+
+          <p class="body-medium card-text" 
+                 data-lang-de="-------------------------// Zen of IT //------------------------- <br>
+                Mag Python und Javascript, 28 Jahre jung <br>
+                Fokus auf Netzwerkadministration, IT-Support & Cloud Computing, Cyber Security und mehr ..."
+                data-lang-en="-------------------------// Zen of IT //------------------------- <br>
+                Loves Python and Javascript, 28 years old <br>
+                Focused on Network Administration, IT-Support & Cloud Computing, Cyber Security and more ...">
+                             -------------------------// Zen of IT //------------------------- <br>
+                             Mag Python und Javascript, 28 Jahre jung <br>
+                             Fokus auf Netzwerkadministration, IT-Support & Cloud Computing, Cyber Security and more ...
+</p>
+
+
+          <ul class="about-list">
+
+            
+            <!--
+            <li class="list-item">
+              <span class="material-symbols-outlined" aria-hidden="true"> <img width="21px" height="21px" src="assets/images/thb.png" > </span>
+
+              <span class="label-medium">Studium an der THB</span>
+            </li>
+            -->
+            <li class="list-item">
+              <span class="material-symbols-outlined" aria-hidden="true"> <img width="21px" height="21px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"> </span>
+
+              <a href="https://www.linkedin.com/in/tobias-madaj-2b01861b5/" class="label-medium">Linkedin.com/tobim1996</a>
+            </li>
+
+            
+            <li class="list-item">
+              <span class="material-symbols-outlined" aria-hidden="true"> <img width="21px" height="21px" src="assets/images/Xing_logo.png"> </span>
+
+              <a href="https://www.xing.com/profile/Tobias_Madaj/web_profiles?expandNeffi=true" class="label-medium">Xing.com/tobim1996</a>
+            </li>
+
+
+            <li class="list-item">
+              <span  class="material-symbols-outlined"  aria-hidden="true"> <img width="22.5px" height="22.5px" src="assets/images/github-icon.png"> </span>
+
+              <a href="https://github.com/tobim1996" class="label-medium">Github.com/tobim1996</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div>
+
+          <!-- 
+            - #PRIMARY TABS
+          -->
+
+          <div class="primary-tabs">
+
+
+             <button class="tab-btn active" data-tab-btn="contact">
+
+            <!-- #WITH ICON --> 
+             <!-- <span class="tab-text title-medium">Skills</span> -->
+            <!--
+             <img id="contact-icon"   width="33px" height="33px" src="assets/images/contactstabiconlight.png" alt="Resume Icon"> 
+
+             <span class="tab-text title-medium-large" 
+             data-lang-de="Kenntnisse" 
+             data-lang-en="Skills">
+             Kenntnisse
+            </span>
+
+              <div class="state-layer"></div>
+            </button>
+           -->
+
+             <!--#WITHOUT ICON -->
+             <span class="tab-text title-medium-large" 
+             data-lang-de="Information" 
+             data-lang-en="Information">
+             Information
+            </span>
+
+              <div class="state-layer"></div>
+            </button> 
+            
+
+
+             <button class="tab-btn" data-tab-btn="resume">
+
+            <!---  #WITH ICON                                 -->
+             <!---
+            <img id="resume-icon"  width="30px" height="30px" src="assets/images/resumetabiconlight.png" alt="Resume Icon"> 
+             <span class="tab-text title-medium-large" 
+                data-lang-de="Lebenslauf" 
+               data-lang-en="Resume">
+               Lebenslauf
+            </span>
+           <div class="state-layer"></div>
+            </button>
+            -->
+
+            <!-- #WITHOUT ICON -->
+            
+             <span class="tab-text title-medium-large" 
+                data-lang-de="Screenshots" 
+               data-lang-en="Screenshots">
+               Screenshots
+            </span>
+           <div class="state-layer"></div>
+            </button> 
+
+            <button class="tab-btn" data-tab-btn="project">
+
+          <!---  #WITH ICON                                 -->
+          <!-- <span class="tab-text title-medium">Projekte</span>-->
+          <!--  
+          <img id="project-icon"   width="29px" height="29px" src="assets/images/projecttabiconlight.png" alt="Resume Icon"> 
+
+               <span class="tab-text title-medium-large" 
+               data-lang-de="Projekte" 
+               data-lang-en="Projects">
+                Projekte
+              </span>
+              <div class="state-layer"></div>
+            </button>
+            -->
+            <!---  #WITHOUT ICON  -->
+            
+               <span class="tab-text title-medium-large" 
+               data-lang-de="Code" 
+               data-lang-en="Code">
+                Code
+              </span>
+              <div class="state-layer"></div>
+            </button>
+
+            
+          </div>
+
+          <!-- 
+            - #PROJECT----------------------------------------------------------------------------------------------------------------------------------
+          -->
+
+          <section class="section tab-content " data-tab-content="project">
+            <div class="container">
+
+              <div class="project-list">
+
+              Hier ist eine Baustelle, noch nicht implementiert
+
+              </div>
+
+            </div>
+          </section>
+
+          <!-- 
+            - #RESUME
+          -->
+
+          <section class="section tab-content resume-tab" data-tab-content="resume">
+            <div class="container">
+
+              Noch nicht implementiert
+        
+            </div>
+
+          </section>
+
+          <!-- 
+            - #CONTACT
+          -->
+
+<section class="section tab-content resume-tab active" data-tab-content="contact">
+  <div class="container">
+
+    <h2 class="section-title title-large icon-title" 
+    data-lang-de="Meine Kenntnisse" 
+    data-lang-en="My Knowledge">
+  <img src="assets/images/azure-icon.svg"  alt="Skills Icon" width="25" height="25" class="icon-title-img">
+  Meine Kenntnisse
+</h2>
+
+<!-- Kenntnisse in IT-Support & IT-Service Management -->
+<h3 class="subtitle"
+    data-lang-de="IT-Support & IT-Service Management"
+    data-lang-en="IT Support & IT Service Management">
+  IT-Support & IT-Service Management
+</h3>
+<ul class="section-description" style="margin-bottom: 1.5rem;">
+  <li data-lang-de="Betreuung von Anwendern bei Hard- und Softwareproblemen"
+      data-lang-en="User support for hardware and software issues">
+    Betreuung von Anwendern bei Hard- und Softwareproblemen
+  </li>
+  <li data-lang-de="Fehleranalyse und Lösungsfindung"
+      data-lang-en="Error analysis and problem solving">
+    Fehleranalyse und Lösungsfindung
+  </li>
+  <li data-lang-de="Kenntnisse in Ticketsystemen und ITSM Tools (z. B. Jira ITSM)"
+      data-lang-en="Knowledge of ticketing systems and ITSM tools (e.g. Jira ITSM)">
+    Kenntnisse in Ticketsystemen und ITSM Tools (z. B. Jira ITSM)
+  </li>
+  <li data-lang-de="Dokumentation von Lösungen und Knowledgemanagementsystemen (Obsidian & Confluence)"
+      data-lang-en="Documentation of solutions and knowledge management systems (Obsidian & Confluence)">
+    Dokumentation von Lösungen und Knowledgemanagementsystemen (Obsidian & Confluence)
+  </li>
+  <li data-lang-de="Kenntnisse im ITIL-Framework und IT-Service-Management"
+      data-lang-en="Knowledge of the ITIL framework and IT service management">
+    Kenntnisse im ITIL-Framework und IT-Service-Management
+  </li>
+</ul>
+
+
+
+
+ 
+
+
+    <h2 class="section-title title-large icon-title" 
+    data-lang-de="Verwendete Technologien" 
+    data-lang-en="Used Technologies">
+  <img src="assets/images/confluence.png"  alt="Technologien Icon" width="25" height="25" class="icon-title-img">
+  Verwendete Technologien
+</h2>
+
+                   
+
+              <ul class="resume-bottom-list">
+
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/html5.svg" width="28" height="28" loading="lazy" alt="HTML5" class="icon">
+
+                  <span class="label-medium">HTML5</span>
+                </li>
+
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/css3.svg" width="28" height="28" loading="lazy" alt="CSS3" class="icon">
+
+                  <span class="label-medium">CSS3</span>
+                </li>
+
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/javascript.svg" width="28" height="28" loading="lazy" alt="JavaScript"
+                    class="icon">
+
+                  <span class="label-medium">JavaScript</span>
+                </li>
+
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/Git_icon.svg.png" width="28" height="28" loading="lazy" alt="React.js"
+                    class="icon">
+
+                  <span class="label-medium">Git</span>
+                </li>
+
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/azure-icon.svg" width="28" height="28" loading="lazy" alt="Node.js"
+                    class="icon">
+
+                  <span class="label-medium">Azure Cloud</span>
+                </li>
+
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/python.svg.png" width="25" height="8" loading="lazy" alt="GitHub" class="icon">
+
+                  <span class="label-medium">Python</span>
+                </li>
+
+                <li class="resume-bottom-item"> 
+                  <img src="./assets/images/github.svg" width="28" height="28" loading="lazy" alt="MongoDB"
+                    class="icon">
+
+                  <span class="label-medium">Github</span>
+                </li>
+
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/VS_code.svg" width="28" height="28" loading="lazy" alt="VS Code"
+                    class="icon">
+
+                  <span class="label-medium">VS Code</span>
+                </li>
+
+                
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/oracle-cloud2.png" width="28" height="28" loading="lazy" alt="VS Code"
+                    class="icon">
+
+                  <span class="label-medium">Oracle Cloud</span>
+                </li>
+
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/java.png" width="28" height="28" loading="lazy" alt="VS Code"
+                    class="icon">
+
+                  <span class="label-medium">Java</span>
+                </li>
+
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/powershell.png" width="28" height="28" loading="lazy" alt="VS Code"
+                    class="icon">
+
+                  <span class="label-medium">Powershell</span>
+                </li>
+
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/bash.svg.png" width="28" height="28" loading="lazy" alt="VS Code"
+                    class="icon">
+
+                  <span class="label-medium">Bash</span>
+                </li>
+
+
+                  <li class="resume-bottom-item">
+                  <img src="./assets/images/docker.png" width="28" height="28" loading="lazy" alt="VS Code"
+                    class="icon">
+
+                  <span class="label-medium">Docker </span>
+                </li>
+
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/kubernetes.png" width="28" height="28" loading="lazy" alt="VS Code"
+                    class="icon">
+
+                  <span class="label-medium">Kubernetes</span>
+                </li>
+
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/jira.png" width="28" height="28" loading="lazy" alt="VS Code"
+                    class="icon">
+
+                  <span class="label-medium">Jira</span>
+                </li>
+
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/confluence.png" width="28" height="28" loading="lazy" alt="VS Code"
+                    class="icon">
+
+                  <span class="label-medium">Confluence</span>
+                </li>
+
+              </ul>
+
+  </div>
+</section>
+
+        </div>
+
+      </div>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+
+        <p class="body-medium" data-lang-en="© 2025. All rights reserved by Tobias Madaj. This website is hosted on GitHub Pages."
+     data-lang-de="© 2025. Alle Rechte vorbehalten von Tobias Madaj. Diese Website wird über GitHub Pages gehostet.">
+    ©© 2025. Alle Rechte vorbehalten von Tobias Madaj. Diese Website wird über GitHub Pages gehostet.
+  </p>
+
+    </div>
+  </footer>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
