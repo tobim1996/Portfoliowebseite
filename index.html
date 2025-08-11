@@ -57,20 +57,19 @@
       
       <!-- Dark Mode Switcher -->
       <button class="icon-btn theme-btn" data-theme-btn>
-        <span class="material-symbols-outlined dark">dark_mode</span>
-        <span class="material-symbols-outlined light">light_mode</span>
+        <img src="assets/images/darkmodeicon.png" alt="Dark Mode" width="24" height="24" class="theme-icon-dark">
+        <img src="assets/images/lightmodeicon.png" alt="Light Mode" width="24" height="24" class="theme-icon-light">
+
       </button>
       
       
       <!-- Language Switcher -->
       <button class="icon-btn language-btn" data-language-btn>
-        <span class="material-symbols-outlined">language</span>
+  <img src="assets/images/languageswitcher.png" alt="Language Switcher" width="24" height="24">
       </button>
   
     </div>
   
-
-
   </header>
 
   <main>
@@ -87,20 +86,6 @@
             <img src="./assets/images/profile.png" width="240" height="240" alt="Tobias Madaj" class="img-cover">
           </figure>
 
-      <!--  <div class="hero-content">
-
-            <span class="label-large section-subtitle"></span>
-
-            <h1 class="display-small">Tobias Madaj</h1>
-
-            <p class="body-large section-text">
-              
-              Lebensmotto: "Erfolg hat drei Buchstaben T-U-N".
-              <br>
-              Open to new Job Opportunities in the IT-Field.
-              <br>
-            </p>  -->
-
               <div class="hero-content">
               <span class="label-large section-subtitle"></span>
               <h1 class="display-small">Tobias Madaj</h1>
@@ -111,10 +96,6 @@
                  Lebensmotto: "Erfolg hat drei Buchstaben T-U-N".     <br>                               
                  Offen für neue Jobmöglichkeiten im IT-Bereich.
               </p>
-          
-            
-        
-
           
             <div class="btn-wrapper">
 
@@ -129,12 +110,37 @@
               <a href="tel:+4917643833331" class="chip">
                 <span  aria-hidden="true"> <img width="23px" height="23px" src="assets/images/WhatsApp.png"> </span> 
 
-                <span class="label-large">+4917643833331</span> <!-- "class="material-symbols-outlined"  wurde ausgeklammert für später vielleicht noch wichtig-->
+                <span class="label-large ">+4917643833331</span> <!-- "class="material-symbols-outlined"  wurde ausgeklammert für später vielleicht noch wichtig-->
 
                 <div class="state-layer"></div>
               </a>
 
             </div>
+
+<div style="font-size: 1rem; margin-top: 1.2rem; display: flex; flex-wrap: wrap; gap: 0rem;">
+  <a  class="chip active">
+    <span class="chip-font">IT-Systemadministrator </span>
+    <div class="state-layer"></div>
+  </a>
+  <a  class="chip active">
+    <span class="chip-font">IT-Support Specialist</span>
+    <div class="state-layer"></div>
+  </a>
+  <a  class="chip active">
+    <span class="chip-font">IT-Projekt Manager</span>
+    <div class="state-layer"></div>
+  </a>
+  <a  class="chip active">
+    <span class="chip-font">Software Developer</span>
+    <div class="state-layer"></div>
+  </a>
+  <a  class="chip active">
+    <span class="chip-font">Data Scientist</span>
+    <div class="state-layer"></div>
+  </a>
+
+
+</div>
 
           </div>
 
@@ -151,12 +157,26 @@
 
          <!--  <h2 class="card-title title-medium">Über mich</h2> -->
 
-          <h2 class="card-title title-medium" id="about-me" 
-          data-lang-de="Über mich" 
-          data-lang-en="About me">
-          Über mich
+
+          <h2 class="card-title title-large" id="about-me" 
+          data-lang-de="Mein Profil" 
+          data-lang-en="My Profile">
+Mein Profil
          </h2>
-      
+     
+
+         <!--     Zum AUSKLAMMERN      
+
+      <h2 class="card-title title-large icon-title" 
+    id="about-me" 
+    data-lang-de="Profil" 
+    data-lang-en="Profile">
+  <img src="assets/images/profileiconforcardtitle.png" alt="Profil Icon" width="25" height="25" class="icon-title-img">
+          Mein Profil
+          </h2> 
+          -->
+
+<!--
 
          <!-- <p class="body-medium card-text">-------------------------// Zen of IT //------------------------- <br>
             
@@ -223,10 +243,13 @@
 
 
              <button class="tab-btn active" data-tab-btn="contact">
-             <!-- <span class="tab-text title-medium">Skills</span> -->
-            <img id="contact-icon"   width="24px" height="24px" src="assets/images/contactstabiconlight.png" alt="Resume Icon"> 
 
-             <span class="tab-text title-medium" 
+            <!-- #WITH ICON --> 
+             <!-- <span class="tab-text title-medium">Skills</span> -->
+            <!--
+             <img id="contact-icon"   width="33px" height="33px" src="assets/images/contactstabiconlight.png" alt="Resume Icon"> 
+
+             <span class="tab-text title-medium-large" 
              data-lang-de="Kenntnisse" 
              data-lang-en="Skills">
              Kenntnisse
@@ -234,24 +257,62 @@
 
               <div class="state-layer"></div>
             </button>
+           -->
 
+             <!--#WITHOUT ICON -->
+             <span class="tab-text title-medium-large" 
+             data-lang-de="Kenntnisse" 
+             data-lang-en="Skills">
+             Kenntnisse
+            </span>
+
+              <div class="state-layer"></div>
+            </button> 
+            
 
 
              <button class="tab-btn" data-tab-btn="resume">
+
+            <!---  #WITH ICON                                 -->
+             <!---
             <img id="resume-icon"  width="30px" height="30px" src="assets/images/resumetabiconlight.png" alt="Resume Icon"> 
-             <span class="tab-text title-medium" 
+             <span class="tab-text title-medium-large" 
                 data-lang-de="Lebenslauf" 
                data-lang-en="Resume">
                Lebenslauf
             </span>
            <div class="state-layer"></div>
             </button>
+            -->
+
+            <!-- #WITHOUT ICON -->
+            
+             <span class="tab-text title-medium-large" 
+                data-lang-de="Lebenslauf" 
+               data-lang-en="Resume">
+               Lebenslauf
+            </span>
+           <div class="state-layer"></div>
+            </button> 
 
             <button class="tab-btn" data-tab-btn="project">
-               <!-- <span class="tab-text title-medium">Projekte</span>-->
-            <img id="project-icon"   width="29px" height="29px" src="assets/images/projecttabiconlight.png" alt="Resume Icon"> 
 
-               <span class="tab-text title-medium" 
+          <!---  #WITH ICON                                 -->
+          <!-- <span class="tab-text title-medium">Projekte</span>-->
+          <!--  
+          <img id="project-icon"   width="29px" height="29px" src="assets/images/projecttabiconlight.png" alt="Resume Icon"> 
+
+               <span class="tab-text title-medium-large" 
+               data-lang-de="Projekte" 
+               data-lang-en="Projects">
+                Projekte
+              </span>
+              <div class="state-layer"></div>
+            </button>
+            -->
+            <!---  #WITHOUT ICON  -->
+            
+               <span class="tab-text title-medium-large" 
                data-lang-de="Projekte" 
                data-lang-en="Projects">
                 Projekte
@@ -259,9 +320,7 @@
               <div class="state-layer"></div>
             </button>
 
-          
-           
-
+            
           </div>
 
           <!-- 
@@ -372,13 +431,23 @@
             <div class="container">
 
              <!-- <h2 class="section-title title-large">Beruflicher Werdegang</h2> -->
+ <div class="resume-header" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 1.2rem;">
+  <h2 class="section-title title-large icon-title" data-lang-de="Beruflicher Werdegang" data-lang-en="Working Experience">
+            <img src="assets/images/workexperiencecvicon.png" alt="Office Icon" width="25" height="25" class="icon-title-img">
+            Beruflicher Werdegang
+          </h2>
+  <div class="resume-action-bar" style="display: flex; gap: 0.7rem; margin: 0; margin-right: 0.1rem;">
+    <a href="assets/cv_tobias_madaj.pdf" class="chip" download title="Lebenslauf herunterladen"
+       style="display: flex; align-items: flex-start; margin: 0; padding: 0.2rem; margin-top: -1.5rem;">
+  <img src="assets/images/download_icon_light.png" alt="Download" width="19" height="19" class="download-icon-light">
+  <img src="assets/images/download_icon_dark.png" alt="Download" width="19" height="19" class="download-icon-dark">
+      <div class="state-layer"></div>
+    </a>
+      </div>
 
-             <h2 class="section-title title-large" 
-             data-lang-de="Beruflicher Werdegang" 
-             data-lang-en="Professional Experience">
-             Beruflicher Werdegang
-            </h2>
-         
+  </div>
+
+
               <ul class="list">
 
                 <li class="resume-item">
@@ -419,7 +488,7 @@
                     </span>
               
                     <span class="body-medium card-text">
-                      23.04.2015 - 04.05.2015
+                      13.04.2015 - 24.04.2015
                     </span>
 
                     <br>
@@ -467,11 +536,10 @@
 
              <!-- <h2 class="section-title title-large">Akademischer Werdegang</h2> -->
 
-             <h2 class="section-title title-large" 
-                  data-lang-de="Akademischer Werdegang" 
-                  data-lang-en="Academic Background">
-                Akademischer Werdegang
-              </h2>
+              <h2 class="section-title title-large icon-title" data-lang-de="Akademischer Werdegang" data-lang-en="Academic Background">
+            <img src="assets/images/academiceducationcvicon.png" alt="Office Icon" width="26" height="26" class="icon-title-img">
+            Akademischer Werdegang
+          </h2>
 
               <ul class="list">
 
@@ -517,11 +585,10 @@
 
              <!--  <h2 class="section-title title-large">Schulische Werdegang</h2> -->
 
-             <h2 class="section-title title-large" 
-             data-lang-de="Schulischer Werdegang" 
-             data-lang-en="Educational Background">
-             Schulischer Werdegang
-            </h2>
+             <h2 class="section-title title-large icon-title" data-lang-de="Schulischer Werdegang" data-lang-en="Educational Background">
+            <img src="assets/images/schooleducationcvicon.png" alt="Office Icon" width="26" height="26" class="icon-title-img">
+            Schulischer Werdegang
+          </h2>
          
 
               <ul class="list">
@@ -589,11 +656,10 @@
 
              <!-- <h2 class="section-title title-large">Zertifikate</h2> -->
 
-             <h2 class="section-title title-large" 
-            data-lang-de="Zertifikate" 
-            data-lang-en="Certifications">
-              Zertifikate
-                </h2>
+             <h2 class="section-title title-large icon-title" data-lang-de="Zertifikate" data-lang-en="Certifications">
+            <img src="assets/images/certificationcvicon.png" alt="Office Icon" width="29" height="29" class="icon-title-img">
+            Zertifikate
+          </h2>
 
 
 
@@ -741,11 +807,11 @@
             </ul>
             
 
-            <h2 class="section-title title-large" 
-             data-lang-de="Sprachkenntnisse" 
-             data-lang-en="Language skills">
-             Sprachkenntnisse
-            </h2>
+               <h2 class="section-title title-large icon-title" data-lang-de="Sprachkenntnisse" data-lang-en="Language Skills">
+            <img src="assets/images/languagescvicon.png" alt="Office Icon" width="22" height="22" class="icon-title-img">
+            Sprachkenntnisse
+          </h2>
+
          
 
               <ul class="list">
@@ -754,8 +820,8 @@
                   <div class="resume-card">
 
                     <p class="body-large"
-                    data-lang-de="Fachhochschulreife – BBSOvG Magdeburg"
-                    data-lang-en="Advanced technical diploma – BBSOvG Magdeburg">
+                    data-lang-de="Deutsch"
+                    data-lang-en="German">
                     Deutsch
                  </p>
                  
@@ -793,16 +859,65 @@
 
                   </div>
                 </li>
+              </ul>
+              
+          <h2 class="section-title title-large icon-title" data-lang-de="EDV-Kenntnisse" data-lang-en="IT Skills">
+            <img src="assets/images/office.png" alt="Office Icon" width="23" height="23" class="icon-title-img">
+            EDV-Kenntnisse
+          </h2>
 
+              <ul class="list">
+
+                <li class="resume-item">
+                  <div class="resume-card">
+
+                    <p class="body-large"
+                    data-lang-de="MS-Office"
+                    data-lang-en="MS-Office">
+                    MS-Office
+                 </p>
+                 
+
+                    <span class="label-medium card-subtitle">Gut</span>
+
+                  </div>
+                </li>
+
+                <li class="resume-item">
+                  <div class="resume-card">
+                    <p class="body-large"
+                    data-lang-de="SAP S/4HANA"
+                    data-lang-en="SAP S/4HANA">
+                    SAP S/4HANA
+                 </p>
+                 
+
+                    <span class="label-medium card-subtitle">Gut</span>
+
+                  </div>
+                </li>
+
+                <li class="resume-item">
+                  <div class="resume-card">
+
+                    <p class="body-large"
+                    data-lang-de='SAP Business One'
+                    data-lang-en='SAP Business One'>
+                    SAP Business One
+                    </p>
+                 
+
+                    <span class="label-medium card-subtitle">Sehr Gut</span>
+
+                  </div>
+                </li>
+
+                
 
               </ul>
 
-
-
+        
             </div>
-
-             
-
 
           </section>
 
@@ -813,17 +928,220 @@
 <section class="section tab-content resume-tab active" data-tab-content="contact">
   <div class="container">
 
-     <h3 class="section-title title-large" 
-      data-lang-de="Meine Kenntnisse" 
-      data-lang-en="My Knowledge">
-      Meine Kenntnisse
-    </h3>
+    <h2 class="section-title title-large icon-title" 
+    data-lang-de="Meine Kenntnisse" 
+    data-lang-en="My Knowledge">
+  <img src="assets/images/azure-icon.svg"  alt="Skills Icon" width="25" height="25" class="icon-title-img">
+  Meine Kenntnisse
+</h2>
 
-    <h3 class="section-title title-large" 
-      data-lang-de="Kompetenzen und Technologien" 
-      data-lang-en="Skills and Technologies">
-      Kompetenzen und Technologien
-    </h3>
+<!-- Kenntnisse in IT-Support & IT-Service Management -->
+<h3 class="subtitle"
+    data-lang-de="IT-Support & IT-Service Management"
+    data-lang-en="IT Support & IT Service Management">
+  IT-Support & IT-Service Management
+</h3>
+<ul class="section-description" style="margin-bottom: 1.5rem;">
+  <li data-lang-de="Betreuung von Anwendern bei Hard- und Softwareproblemen"
+      data-lang-en="User support for hardware and software issues">
+    Betreuung von Anwendern bei Hard- und Softwareproblemen
+  </li>
+  <li data-lang-de="Fehleranalyse und Lösungsfindung"
+      data-lang-en="Error analysis and problem solving">
+    Fehleranalyse und Lösungsfindung
+  </li>
+  <li data-lang-de="Kenntnisse in Ticketsystemen und ITSM Tools (z. B. Jira ITSM)"
+      data-lang-en="Knowledge of ticketing systems and ITSM tools (e.g. Jira ITSM)">
+    Kenntnisse in Ticketsystemen und ITSM Tools (z. B. Jira ITSM)
+  </li>
+  <li data-lang-de="Dokumentation von Lösungen und Knowledgemanagementsystemen (Obsidian & Confluence)"
+      data-lang-en="Documentation of solutions and knowledge management systems (Obsidian & Confluence)">
+    Dokumentation von Lösungen und Knowledgemanagementsystemen (Obsidian & Confluence)
+  </li>
+  <li data-lang-de="Kenntnisse im ITIL-Framework und IT-Service-Management"
+      data-lang-en="Knowledge of the ITIL framework and IT service management">
+    Kenntnisse im ITIL-Framework und IT-Service-Management
+  </li>
+</ul>
+
+
+<!-- Kenntnisse in Cybersecurity & Netzwerkadministration -->
+<h3 class="subtitle"
+    data-lang-de="Netzwerkadministration & Cybersecurity"
+    data-lang-en="Network Administration & Cybersecurity">
+  Netzwerkadministration & Cybersecurity
+</h3>
+<ul class="section-description" style="margin-bottom: 1.5rem;" 
+    data-lang-de=""
+    data-lang-en="">
+  <li data-lang-de="Verwaltung von Benutzerkonten, Zugriffsrechten und Gruppenrichtlinien (Active Directory)"
+      data-lang-en="Management of user accounts, access rights, and group policies (Active Directory)">
+    Verwaltung von Benutzerkonten, Zugriffsrechten und Gruppenrichtlinien (Active Directory)
+  </li>
+  <li data-lang-de="Einrichtung und Wartung von Netzwerken, Router- und Switch-Konfigurationen"
+      data-lang-en="Setup and maintenance of networks, router and switch configurations">
+    Einrichtung und Wartung von Netzwerken, Router- und Switch-Konfigurationen
+  </li>
+  <li data-lang-de="Grundkenntnisse in Netzwerksicherheit, Firewall-Management und Zugriffskontrolle"
+      data-lang-en="Basic knowledge of network security, firewall management, and access control">
+    Grundkenntnisse in Netzwerksicherheit, Firewall-Management und Zugriffskontrolle
+  </li>
+  <li data-lang-de="Erkennen und Beheben von Sicherheitslücken sowie Durchführung von Datensicherung"
+      data-lang-en="Identification and remediation of security vulnerabilities, and data backup">
+    Erkennen und Beheben von Sicherheitslücken sowie Durchführung von Datensicherung
+  </li>
+  <li data-lang-de="Konfiguration und Verwaltung von VPN-Verbindungen (z.B. IPsec, SSL VPN)"
+      data-lang-en="Configuration and management of VPN connections (e.g. IPsec, SSL VPN)">
+    Konfiguration und Verwaltung von VPN-Verbindungen (z.B. IPsec, SSL VPN)
+  </li>
+  <li data-lang-de="Passwort- und Berechtigungsmanagement"
+      data-lang-en="Password and permission management">
+    Passwort- und Berechtigungsmanagement
+  </li>
+  <li data-lang-de="Fehlerdiagnose und Performance-Optimierung von Netzwerken"
+      data-lang-en="Troubleshooting and performance optimization of networks">
+    Fehlerdiagnose und Performance-Optimierung von Netzwerken
+  </li>
+  <li data-lang-de="Grundlagen von IT-Sicherheitsmanagement"
+      data-lang-en="Basics of IT security management">
+    Grundlagen von IT-Sicherheitsmanagement
+  </li>
+</ul>
+
+
+
+<!--      Kenntnisse in Cloud Computing & DevOps     -->
+<h3 class="subtitle" 
+    data-lang-de="Cloud Computing & DevOps" 
+    data-lang-en="Cloud Computing & DevOps">
+  Cloud Computing & DevOps
+</h3>
+<ul class="section-description" style="margin-bottom: 1.5rem;">
+  <li data-lang-de="Erfahrung mit Cloud-Plattformen wie Microsoft Azure, AWS und Oracle Cloud" 
+      data-lang-en="Experience with cloud platforms such as Microsoft Azure, AWS, and Oracle Cloud">
+    Erfahrung mit Cloud-Plattformen wie Microsoft Azure, AWS und Oracle Cloud
+  </li>
+  <li data-lang-de="Automatisierung von Deployments und Infrastrukturmanagement mit Tools" 
+      data-lang-en="Automation of deployments and infrastructure management using tools">
+    Automatisierung von Deployments und Infrastrukturmanagement mit Tools
+  </li>
+  <li data-lang-de="Implementierung von Continuous Integration und Continuous Deployment (CI/CD)" 
+      data-lang-en="Implementation of Continuous Integration and Continuous Deployment (CI/CD)">
+    Implementierung von Continuous Integration und Continuous Deployment (CI/CD)
+  </li>
+  <li data-lang-de="Umgang mit Container-Technologien wie Docker und Kubernetes" 
+      data-lang-en="Handling container technologies like Docker and Kubernetes">
+    Umgang mit Container-Technologien wie Docker und Kubernetes
+  </li>
+</ul>
+
+
+ <!--      Kenntnisse in Softwareentwicklung       -->
+<h3 class="subtitle" data-lang-de="Softwareentwicklung & Automatisierung" data-lang-en="Software Development & Automation">
+  Softwareentwicklung & Automatisierung
+</h3>
+<ul class="section-description" style="margin-bottom: 1.5rem;" data-lang-de="" data-lang-en="">
+  <li data-lang-de="Fundierte Kenntnisse in objektorientierter Programmierung (Python, Java, C#, PHP, C++, JavaScript)" 
+      data-lang-en="Solid knowledge of object-oriented programming (Python, Java, C#, PHP, C++, JavaScript)">  
+    Fundierte Kenntnisse in objektorientierter Programmierung (Python, Java, C#, PHP, C++, JavaScript)
+  </li>
+  <li data-lang-de="Erfahrung mit Versionsverwaltungssystemen (Git, GitHub) und Containerisierung (Docker)" 
+      data-lang-en="Experience with version control systems (Git, GitHub) and containerization (Docker)">
+    Erfahrung mit Versionsverwaltungssystemen (Git, GitHub) und Containerisierung (Docker)
+  </li>
+  <li data-lang-de="Automatisierung von Infrastruktur und Deployments mittels Bash- und PowerShell-Skripten" 
+      data-lang-en="Automation of infrastructure and deployments using Bash and PowerShell scripts">
+    Automatisierung von Infrastruktur und Deployments mittels Bash- und PowerShell-Skripten
+  </li>
+  <li data-lang-de="Automatisierung von IT-Prozessen (Google IT Automation Zertifikat)" 
+      data-lang-en="Automation of IT processes (Google IT Automation Certificate)">
+    Automatisierung von IT-Prozessen (Google IT Automation Zertifikat)
+  </li>
+  <li data-lang-de="Vertraut mit Software-Engineering-Prinzipien und Qualitätssicherung" 
+      data-lang-en="Familiar with software engineering principles and quality assurance">
+    Vertraut mit Software-Engineering-Prinzipien und Qualitätssicherung
+  </li>
+  <li data-lang-de="Grundlagen im Software-Testing und in der Testautomatisierung" 
+      data-lang-en="Basics of software testing and test automation">
+    Grundlagen im Software-Testing und in der Testautomatisierung
+  </li>
+  <li data-lang-de="Entwicklung von REST-APIs und Microservices" 
+      data-lang-en="Development of REST APIs and microservices">
+    Entwicklung von REST-APIs und Microservices
+  </li>
+</ul>
+
+
+ <!--      Kenntnisse in Künstliche Intelligenz & Data Science       -->
+<h3 class="subtitle" 
+    data-lang-de="Künstliche Intelligenz & Data Science" 
+    data-lang-en="Artificial Intelligence & Data Science">
+  Künstliche Intelligenz & Data Science
+</h3>
+<ul class="section-description" style="margin-bottom: 1.5rem;">
+  <li data-lang-de="Grundlagen in Machine Learning und Datenanalyse" 
+      data-lang-en="Fundamentals of machine learning and data analysis">
+    Grundlagen in Machine Learning und Datenanalyse
+  </li>
+  <li data-lang-de="Erfahrung mit Python-Bibliotheken wie Pandas, NumPy und Scikit-Learn" 
+      data-lang-en="Experience with Python libraries like Pandas, NumPy, and Scikit-Learn">
+    Erfahrung mit Python-Bibliotheken wie Pandas, NumPy und Scikit-Learn
+  </li>
+  <li data-lang-de="Kenntnisse in Datenvisualisierung mit Matplotlib und Seaborn" 
+      data-lang-en="Knowledge of data visualization with Matplotlib and Seaborn">
+    Kenntnisse in Datenvisualisierung mit Matplotlib und Seaborn
+  </li>
+  <li data-lang-de="Erste Projekte zur Automatisierung und Datenverarbeitung" 
+      data-lang-en="Initial projects on automation and data processing">
+    Erste Projekte zur Automatisierung und Datenverarbeitung
+  </li>
+  <li data-lang-de="Vertraut mit KI-Frameworks und Cloud-Services (z. B. Azure AI, Oracle Cloud)" 
+      data-lang-en="Familiar with AI frameworks and cloud services (e.g. Azure AI, Oracle Cloud)">
+    Vertraut mit KI-Frameworks und Cloud-Services (z. B. Azure AI, Oracle Cloud)
+  </li>
+</ul>
+
+
+<!--      Kenntnisse in IT-Projektmanagement       -->
+<h3 class="subtitle" 
+    data-lang-de="IT-Projektmanagement" 
+    data-lang-en="IT Project Management">
+  IT-Projektmanagement
+</h3>
+<ul class="section-description" style="margin-bottom: 1.5rem;">
+  <li data-lang-de="Grundlagen des Projektmanagements" 
+      data-lang-en="Fundamentals of project management">
+    Grundlagen des Projektmanagements
+  </li>
+  <li data-lang-de="Praxisbezogene Erfahrungen durch Studienprojekte" 
+      data-lang-en="Practical experience through academic projects">
+    Praxisbezogene Erfahrungen durch Studienprojekte
+  </li>
+  <li data-lang-de="Vertraut mit agilen Methoden wie Scrum und Kanban" 
+      data-lang-en="Familiar with agile methods such as Scrum and Kanban">
+    Vertraut mit agilen Methoden wie Scrum und Kanban
+  </li>
+  <li data-lang-de="Google Projektmanagement-Zertifikat (Google Project Management Certificate)" 
+      data-lang-en="Google Project Management Certificate">
+    Google Projektmanagement-Zertifikat (Google Project Management Certificate)
+  </li>
+  <li data-lang-de="Erfahrung im Umgang mit Tools wie Jira und MS Projects" 
+      data-lang-en="Experience with tools like Jira and MS Project">
+    Erfahrung im Umgang mit Tools wie Jira und MS Projects
+  </li>
+</ul>
+
+
+
+
+
+    <h2 class="section-title title-large icon-title" 
+    data-lang-de="Kompetenzen und Technologien" 
+    data-lang-en="Skills and Technologies">
+  <img src="assets/images/confluence.png"  alt="Technologien Icon" width="25" height="25" class="icon-title-img">
+  Kompetenzen und Technologien
+</h2>
+
                    
 
               <ul class="resume-bottom-list">
@@ -958,7 +1276,11 @@
   <footer class="footer">
     <div class="container">
 
-      <p class="body-medium">Copyright 2025c. All right reserved by Tobias Madaj. This Website is hosted on Github Pages </p>
+
+        <p class="body-medium" data-lang-en="© 2025. All rights reserved by Tobias Madaj. This website is hosted on GitHub Pages."
+     data-lang-de="© 2025. Alle Rechte vorbehalten von Tobias Madaj. Diese Website wird über GitHub Pages gehostet.">
+    ©© 2025. Alle Rechte vorbehalten von Tobias Madaj. Diese Website wird über GitHub Pages gehostet.
+  </p>
 
     </div>
   </footer>

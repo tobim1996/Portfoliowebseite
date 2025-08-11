@@ -27,68 +27,60 @@ const changeTheme = () => {
 
 $themeBtn.addEventListener("click", changeTheme);
 
-/**
- * Language Switch
- */
 
 document.addEventListener("DOMContentLoaded", () => {
   const $languageBtn = document.querySelector("[data-language-btn]");
-  
-  // Sprache aus sessionStorage laden oder Standard setzen
-  const storedLang = sessionStorage.getItem("language");
+
+  // Funktion, um den Text basierend auf der Sprache zu aktualisieren
+  const updateText = () => {
+  const lang = document.documentElement.lang;
+  const elements = document.querySelectorAll("[data-lang-de], [data-lang-en]");
+  elements.forEach((element) => {
+    const text = element.getAttribute(`data-lang-${lang}`);
+    if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
+      if (text) element.setAttribute("placeholder", text);
+    } else if (
+      element.classList.contains("icon-title") &&
+      element.querySelector("img")
+    ) {
+      // Nur den Textknoten nach dem <img> ersetzen
+      const img = element.querySelector("img");
+      let textNode = img.nextSibling;
+      // Falls kein Textknoten existiert, neuen anlegen
+      if (!textNode || textNode.nodeType !== Node.TEXT_NODE) {
+        textNode = document.createTextNode("");
+        img.after(textNode);
+      }
+      textNode.nodeValue = " " + text;
+    } else {
+      if (text) element.innerHTML = text;
+    }
+  });
+};
+
+  // Sprache aus localStorage laden oder Standard setzen
+  const storedLang = localStorage.getItem("language");
   if (storedLang) {
     document.documentElement.lang = storedLang;
-    console.log("Gespeicherte Sprache gefunden:", storedLang);
-    updateText();
   } else {
     document.documentElement.lang = "de";
-    sessionStorage.setItem("language", "de");
-    console.log("Standard-Sprache auf Deutsch gesetzt.");
+    localStorage.setItem("language", "de");
   }
+  updateText();
 
   // Funktion, um die Sprache zu wechseln
   const changeLanguage = () => {
     const currentLang = document.documentElement.lang;
     const newLang = currentLang === "de" ? "en" : "de";
-
-    console.log(`Wechsel von ${currentLang} nach ${newLang}`);
-
     document.documentElement.lang = newLang;
-    sessionStorage.setItem("language", newLang);
+    localStorage.setItem("language", newLang);
     updateText();
   };
 
-  // Funktion, um den Text basierend auf der Sprache zu aktualisieren
-  const updateText = () => {
-    const lang = document.documentElement.lang;
-    console.log("Aktualisiere Text für Sprache:", lang);
-
-    // Alle Elemente mit data-lang-* Attributen aktualisieren
-  const elements = document.querySelectorAll("[data-lang-de], [data-lang-en]");
-  elements.forEach((element) => {
-    const text = element.getAttribute(`data-lang-${lang}`);
-    if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
-      // Aktualisiere das placeholder-Attribut für Eingabefelder
-      if (text) {
-        element.setAttribute("placeholder", text);
-      }
-    } else {
-      // Aktualisiere den innerHTML für andere Elemente
-      if (text) {
-        element.innerHTML = text;
-      }
-    }
-  });
-};
-
   // Event-Listener für den Button-Klick hinzufügen
-  $languageBtn.addEventListener("click", () => {
-    console.log("Language button clicked");
-    changeLanguage();
-  });
-
-  // Text initial setzen
-  updateText();
+  if ($languageBtn) {
+    $languageBtn.addEventListener("click", changeLanguage);
+  }
 });
 
 

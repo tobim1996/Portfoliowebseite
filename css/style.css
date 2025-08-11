@@ -1,15 +1,12 @@
 /*-----------------------------------*\
-  #style.css^
-
+  #style.css
   Made by Tobias Madaj
-  
-\*-----------------------------------*/
+
+*-----------------------------------*/
 
 /**
  * copyright 2023 Tobias Madaj
-    
     USE CSS STYLE GUIDE FOR ALL PROJECTS !!!
-
  */
 
 /*-----------------------------------*\
@@ -55,8 +52,8 @@
    */
 
   /* font family */
-  --font-primary: 'Open Sans', sans-serif;
-  --font-secondary: 'Noto Sans', sans-serif;
+--font-primary: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', Arial, sans-serif;
+--font-secondary: 'Noto Sans', 'Open Sans', Arial, sans-serif;
 
   /* font size */
   --base-font-size: 62.5%;
@@ -67,6 +64,7 @@
   --headline-medium: 2.8rem;
   --headline-small: 2.4rem;
   --title-large: 2rem;
+  --title-medium-large: 1.7rem;
   --title-medium: 1.6rem;
   --title-small: 1.4rem;
   --label-large: 1.7rem;
@@ -271,6 +269,14 @@ body {
   line-height: 28px;
 }
 
+.title-medium-large {
+  font-family: var(--font-primary);
+  font-size: var(--title-medium-large); /* z.B. 2rem */
+  font-weight: var(--weight-medium);
+  line-height: 39px;
+  letter-spacing: 0.15px;
+}
+
 .title-medium {
   font-family: var(--font-primary);
   font-size: var(--title-medium);
@@ -414,6 +420,8 @@ body {
 
 .btn:hover:not(:focus) { box-shadow: var(--elevation-1); }
 
+
+
 /**
  * TAB
  */
@@ -471,23 +479,76 @@ body {
 /**
  * CHIP
  */
-
 .chip {
-  height: 40px;
+  height: 30px;
   max-width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3px;
+  gap: 8px;
+  white-space: nowrap;
+  padding: 0.4rem 0.4rem;
   padding-inline: 6px;
-  border: 1px none var(--outline);
+  border: 1px solid transparent;
   border-radius: var(--radius-small);
   background-color: var(--surface);
   color: var(--on-surface-variant);
   --state-layer-bg: var(--on-surface-variant);
+  transition: background 0.2s, box-shadow 0.2s, border-color 0.2s;
+
 }
 
+/**
+ * Change of Chip Font Size
+ */
+.chip .chip-font {
+  font-size: 1.6rem;
+}
+
+ .chip:hover,
+.chip:focus-visible,
+.chip--active,
+.chip--active:hover,
+.chip--active:focus-visible {
+  background: rgba(255,255,255,0.08); /* leichtes Overlay */
+  color: var(--on-surface-variant);
+  border: 1px solid transparent; /* kein sichtbarer Rand */
+  box-shadow: none;
+}
+
+
 .chip .material-symbols-outlined { font-size: 1.8rem; }
+
+.download-icon-dark { display: block; }
+.download-icon-light { display: none; }
+
+/* Download-Icon im Light-Mode weniger hell */
+.download-icon-light {
+  filter: brightness(0.9) contrast(0.98);
+  opacity: 0.88;
+}
+
+/* Icon vor Überschrift */
+
+.icon-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.icon-title-img {
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+
+[data-theme="dark"] .download-icon-dark { display: none; }
+[data-theme="dark"] .download-icon-light { display: block; }
+
+.theme-icon-dark { display: block; }
+.theme-icon-light { display: none; }
+
+[data-theme="dark"] .theme-icon-dark { display: none; }
+[data-theme="dark"] .theme-icon-light { display: block; }
 
 
 /**
@@ -634,14 +695,14 @@ body {
 .hero .section-subtitle { color: var(--on-surface-variant); }
 
 .hero .section-text {
-  margin-block: 5px 16px;
+  margin-block: 5px 8px;
   color: var(--on-surface-variant);
 }
 
 .hero .btn-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 9px;
 }
 
 /*-----------------------------------*\
@@ -695,6 +756,11 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
   margin-block-end: 28px;
+}
+.resume-tab .container > .resume-action-bar {
+  margin-top: 0;
+  margin-bottom: 0.2rem; /* oder 0, wenn du gar keinen Abstand willst */
+  padding-top: 0;
 }
 
 .resume-card {
