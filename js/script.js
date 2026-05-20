@@ -30,33 +30,36 @@ $themeBtn.addEventListener("click", changeTheme);
 
 document.addEventListener("DOMContentLoaded", () => {
   const $languageBtn = document.querySelector("[data-language-btn]");
+  const $languageDropdown = document.querySelector("[data-language-dropdown]");
+  const $languageMenu = document.querySelector("[data-language-menu]");
+  const $languageOptions = document.querySelectorAll(".language-option");
 
   // Funktion, um den Text basierend auf der Sprache zu aktualisieren
   const updateText = () => {
-  const lang = document.documentElement.lang;
-  const elements = document.querySelectorAll("[data-lang-de], [data-lang-en]");
-  elements.forEach((element) => {
-    const text = element.getAttribute(`data-lang-${lang}`);
-    if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
-      if (text) element.setAttribute("placeholder", text);
-    } else if (
-      element.classList.contains("icon-title") &&
-      element.querySelector("img")
-    ) {
-      // Nur den Textknoten nach dem <img> ersetzen
-      const img = element.querySelector("img");
-      let textNode = img.nextSibling;
-      // Falls kein Textknoten existiert, neuen anlegen
-      if (!textNode || textNode.nodeType !== Node.TEXT_NODE) {
-        textNode = document.createTextNode("");
-        img.after(textNode);
+    const lang = document.documentElement.lang;
+    const elements = document.querySelectorAll("[data-lang-de], [data-lang-en], [data-lang-pl]");
+    elements.forEach((element) => {
+      const text = element.getAttribute(`data-lang-${lang}`);
+      if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
+        if (text) element.setAttribute("placeholder", text);
+      } else if (
+        element.classList.contains("icon-title") &&
+        element.querySelector("img")
+      ) {
+        // Nur den Textknoten nach dem <img> ersetzen
+        const img = element.querySelector("img");
+        let textNode = img.nextSibling;
+        // Falls kein Textknoten existiert, neuen anlegen
+        if (!textNode || textNode.nodeType !== Node.TEXT_NODE) {
+          textNode = document.createTextNode("");
+          img.after(textNode);
+        }
+        textNode.nodeValue = " " + text;
+      } else {
+        if (text) element.innerHTML = text;
       }
-      textNode.nodeValue = " " + text;
-    } else {
-      if (text) element.innerHTML = text;
-    }
-  });
-};
+    });
+  };
 
   // Sprache aus localStorage laden oder Standard setzen
   const storedLang = localStorage.getItem("language");
@@ -67,20 +70,61 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("language", "de");
   }
   updateText();
+  updateLanguageMenuState();
+
+  // Funktion, um den aktiven Sprach-Button zu markieren
+  function updateLanguageMenuState() {
+    const currentLang = document.documentElement.lang;
+    $languageOptions.forEach(option => {
+      if (option.getAttribute("data-lang") === currentLang) {
+        option.classList.add("active");
+      } else {
+        option.classList.remove("active");
+      }
+    });
+  }
 
   // Funktion, um die Sprache zu wechseln
-  const changeLanguage = () => {
-    const currentLang = document.documentElement.lang;
-    const newLang = currentLang === "de" ? "en" : "de";
+  const changeLanguage = (newLang) => {
     document.documentElement.lang = newLang;
     localStorage.setItem("language", newLang);
     updateText();
+    updateLanguageMenuState();
+    closeLanguageDropdown();
   };
 
-  // Event-Listener für den Button-Klick hinzufügen
+  // Dropdown öffnen/schließen
+  const toggleLanguageDropdown = () => {
+    $languageDropdown.classList.toggle("active");
+  };
+
+  const closeLanguageDropdown = () => {
+    $languageDropdown.classList.remove("active");
+  };
+
+  // Event-Listener für den Dropdown-Button
   if ($languageBtn) {
-    $languageBtn.addEventListener("click", changeLanguage);
+    $languageBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      toggleLanguageDropdown();
+    });
   }
+
+  // Event-Listener für die Sprach-Optionen
+  $languageOptions.forEach(option => {
+    option.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const selectedLang = option.getAttribute("data-lang");
+      changeLanguage(selectedLang);
+    });
+  });
+
+  // Dropdown schließen, wenn außerhalb geklickt wird
+  document.addEventListener("click", (e) => {
+    if (!$languageDropdown.contains(e.target)) {
+      closeLanguageDropdown();
+    }
+  });
 });
 
 
