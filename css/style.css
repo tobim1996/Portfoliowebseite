@@ -983,8 +983,9 @@ body {
   border-radius: var(--radius-medium);
   box-shadow: var(--elevation-2);
   list-style: none;
-  padding: 8px 0;
-  min-width: 180px;
+  padding: 4px 0;
+  min-width: auto;
+  width: max-content;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
@@ -1006,16 +1007,17 @@ body {
 .language-option {
   display: flex;
   align-items: center;
-  width: 100%;
-  padding: 10px 4px;
+  gap: 4px;
+  padding: 6px 8px;
   background: none;
   border: none;
   color: var(--on-surface);
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   transition: background-color 0.2s ease;
-  text-align: right;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .language-option:hover {
