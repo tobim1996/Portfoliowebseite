@@ -23,81 +23,79 @@
   <link rel="stylesheet" href="./css/style.css" />
 
   <style>
-html, body {
-  height: 100%;
-  margin: 0;
-}
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* volle Bildschirmhöhe */
-  font-family: 'Open Sans', sans-serif;
-}
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      /* volle Bildschirmhöhe */
+      font-family: 'Open Sans', sans-serif;
+    }
 
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-}
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+    }
 
-main h1 {
-  font-size: 6rem;
-  margin: 0;
-  color: var(--color-error, #e74c3c);
-  font-weight: 700;
-}
+    main h1 {
+      font-size: 6rem;
+      margin: 0;
+      color: var(--color-error, #e74c3c);
+      font-weight: 700;
+    }
 
-main h3 {
-  font-size: 1.7rem;
-  font-weight: 600;
-  margin: 1rem 0;
-  color: var(--color-accent, #f39c12); /* Optional: Orange Akzent */
-}
+    main h3 {
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin: 1rem 0;
+      color: var(--color-accent, #f39c12);
+      /* Optional: Orange Akzent */
+    }
 
-main p {
-  max-width: 500px;
-  margin: 0 auto 2rem auto;
-  color: var(--color-text-primary, #eee);
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
+    main p {
+      max-width: 500px;
+      margin: 0 auto 2rem auto;
+      color: var(--color-text-primary, #eee);
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
 
-main a.button {
-  background-color: var(--color-primary, #3498db);
-  color: white;
-  padding: 1rem 2.5rem;
-  border-radius: 8px;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 1.25rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
+    main a.button {
+      background-color: var(--color-primary, #3498db);
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.25rem;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
 
-main a.button:hover {
-  background-color: var(--color-primary-dark, #2980b9);
-  transform: scale(1.05);
-}
+    main a.button:hover {
+      background-color: var(--color-primary-dark, #2980b9);
+      transform: scale(1.05);
+    }
 
-.material-symbols-outlined {
-  vertical-align: middle;
-  font-size: 1.4em;
-}
+    .material-symbols-outlined {
+      vertical-align: middle;
+      font-size: 1.4em;
+    }
 
-.footer {
-
-}
-
-
-
+    .footer {}
   </style>
 </head>
 
@@ -110,36 +108,77 @@ main a.button:hover {
     </a>
 
     <div class="right-buttons">
+
+
+      <!-- Dark Mode Switcher -->
       <button class="icon-btn theme-btn" data-theme-btn>
-        <span class="material-symbols-outlined dark">dark_mode</span>
-        <span class="material-symbols-outlined light">light_mode</span>
+        <img src="assets/images/darkmodeicon.png" alt="Dark Mode" width="24" height="24" class="theme-icon-dark">
+        <img src="assets/images/lightmodeicon.png" alt="Light Mode" width="24" height="24" class="theme-icon-light">
+
       </button>
 
-      <button class="icon-btn language-btn" data-language-btn>
-        <span class="material-symbols-outlined">language</span>
-      </button>
+
+      <!-- Language Switcher Dropdown -->
+      <div class="language-dropdown" data-language-dropdown>
+        <button class="icon-btn language-btn" data-language-btn>
+          <img src="assets/images/languageswitcher.png" alt="Language Switcher" width="24" height="24">
+        </button>
+        <ul class="language-menu" data-language-menu>
+          <li><button class="language-option" data-lang="de" title="Deutsch"><img src="assets/images/deutschland.png"
+                width="20" height="20"> DE</button></li>
+          <li><button class="language-option" data-lang="en" title="English"><img src="assets/images/english1.png"
+                width="20" height="20"> EN</button></li>
+          <li><button class="language-option" data-lang="pl" title="Polski"> <img src="assets/images/polen.png"
+                width="20" height="20"> PL </button></li>
+        </ul>
+      </div>
+
+    </div>
+
     </div>
   </header>
 
-   <main>
+  <main>
     <br>
     <br>
-    <img width="600px" height="900px" src="./assets/images/404-image.png" alt="Seite nicht gefunden" />
+    <img width="600px" height="900px" src="./assets/images/404-image.png" alt="Seite nicht gefunden"
+      data-lang-de-alt="Seite nicht gefunden" data-lang-en-alt="Page not found"
+      data-lang-pl-alt="Strona nie znaleziona" />
     <br>
     <br>
     <br>
-    <h1>404 - Seite nicht gefunden</h1>
-    <h3>Oops! Die von dir gesuchte Seite existiert leider nicht oder wurde verschoben.</h3>
+
+    <h1 data-lang-de="404 - Seite nicht gefunden" data-lang-en="404 - Page not found"
+      data-lang-pl="404 - Strona nie znaleziona">
+
+      404 - Seite nicht gefunden
+    </h1>
+
+    <h3 data-lang-de="Oops! Die von dir gesuchte Seite existiert leider nicht oder wurde verschoben."
+      data-lang-en="Oops! The page you are looking for does not exist or has been moved."
+      data-lang-pl="Ups! Szukana strona nie istnieje lub została przeniesiona.">
+
+      Oops! Die von dir gesuchte Seite existiert leider nicht oder wurde verschoben.
+    </h3>
+
     <br>
-    <a href="index.html" class="button">Zurück zur Startseite</a>
+    <a href="index.html" class="button" data-lang-de="Zurück zur Startseite" data-lang-en="Back to homepage"
+      data-lang-pl="Powrót do strony głównej">
+
+      Zurück zur Startseite
+    </a>
   </main>
+ <footer class="footer">
+  <div class="container">
+    <p class="body-medium"
+       data-lang-de="© 2026. Alle Rechte vorbehalten von Tobias Madaj. Zuvor auf Microsoft Azure gehostet, jetzt auf GitHub Pages."
+       data-lang-en="© 2026. All rights reserved by Tobias Madaj. Previously hosted on Microsoft Azure, now on GitHub Pages."
+       data-lang-pl="© 2026. Wszelkie prawa zastrzeżone przez Tobias Madaj. Wcześniej hostowane na Microsoft Azure, obecnie na GitHub Pages.">
 
-
-  <footer class="footer">
-    <div class="container">
-      <p class="body-medium">© 2025 Tobias Madaj. Alle Rechte vorbehalten. Diese Website wird auf GitHub Pages gehostet.</p>
-    </div>
-  </footer>
+      © 2026. Alle Rechte vorbehalten von Tobias Madaj. Zuvor auf Microsoft Azure gehostet, jetzt auf GitHub Pages.
+    </p>
+  </div>
+</footer>
 
   <script src="./js/script.js"></script>
 </body>
