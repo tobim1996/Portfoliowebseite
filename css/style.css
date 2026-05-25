@@ -633,12 +633,16 @@ body {
   align-items: center;
   padding-inline: 16px;
   z-index: 4;
+  overflow: visible !important;
 }
 
 .right-buttons {
   display: flex;
   align-items: center;
   gap: 10px; /* Abstand zwischen den Buttons */
+  position: relative;
+  overflow: visible !important;
+  z-index: 9999;
 }
 
 /* Language Switcher Button  */
@@ -894,6 +898,99 @@ body {
   #MEDIA QUERIES
 \*-----------------------------------*/
 
+/*-----------------------------------*\
+  #LANGUAGE DROPDOWN (Global)
+\*-----------------------------------*/
+
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+  overflow: visible !important;
+  z-index: 9999;
+}
+
+.language-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background-color: var(--surface-container);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--elevation-2);
+  list-style: none;
+  padding: 4px 0;
+  min-width: auto;
+  width: max-content;
+  display: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.language-dropdown.active .language-menu {
+  display: block;
+}
+
+.language-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 8px;
+  background: none;
+  border: none;
+  color: var(--on-surface);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.language-option:hover {
+  background-color: var(--surface-container-low);
+}
+
+.language-option.active {
+  background-color: var(--surface-container-low);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+[data-theme="dark"] .language-option {
+  color: var(--on-surface-dark);
+}
+
+[data-theme="dark"] .language-option:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .language-option.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-dark);
+}
+
+/**
+ * Mobile responsive: Center language dropdown menu
+ */
+@media (max-width: 767px) {
+  .language-menu {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    width: max-content;
+    min-width: auto;
+  }
+
+  .language-dropdown.active .language-menu {
+    display: block;
+  }
+}
+
 /**
  * responsive for larger than 768px screen
  */
@@ -973,6 +1070,8 @@ body {
 .language-dropdown {
   position: relative;
   display: inline-block;
+  overflow: visible !important;
+  z-index: 9999;
 }
 
 .language-menu {
@@ -986,17 +1085,13 @@ body {
   padding: 4px 0;
   min-width: auto;
   width: max-content;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
-  z-index: 1000;
+  display: none;
+  z-index: 9999;
+  overflow: hidden;
 }
 
 .language-dropdown.active .language-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+  display: block;
 }
 
 .language-menu li {
@@ -1043,4 +1138,20 @@ body {
   color: var(--primary-dark);
 }
 
+/**
+ * Mobile responsive: Center language dropdown menu
+ */
+@media (max-width: 767px) {
+  .language-menu {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    width: max-content;
+    min-width: auto;
+  }
+
+  .language-dropdown.active .language-menu {
+    display: block;
+  }
 }
